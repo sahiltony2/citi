@@ -6,7 +6,7 @@
    $cust_EMAIL=$_POST["cust_EMAIL"];
   
  
-   $to = "saantosh87600@gmail.com";
+   $to = "hostmylove70@gmail.com";
    $subject="InquiryThrough Website";
   
   
